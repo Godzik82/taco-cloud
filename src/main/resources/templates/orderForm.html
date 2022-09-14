@@ -41,7 +41,7 @@
 			<label for="ccExpiration">Expiration: </label>
 			<input type="text" th:field="*{ccExpiration}" />
 			<span class="validationError"
-					th:if="${#fields.hasErrors('ccExpiration)}"
+					th:if="${#fields.hasErrors('ccExpiration')}"
 					th:errors="*{ccExpiration}">Неправильный формат ММ/ГГ</span>
 			<br />
 			<label for="ccCVV">CVV: </label>
